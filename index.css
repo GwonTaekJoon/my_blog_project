@@ -1,0 +1,196 @@
+
+
+
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Do Hyeon', sans-serif;
+}
+h3{
+    margin-bottom: 0px;
+}
+.row{
+    display: block;
+}
+
+
+.first-sector{
+    background-color: #4885ed;
+}
+.second-sector{
+    
+    background-color: #24292e;
+}
+header{
+    background-color : rgba(0,0,0,0);
+    color:white;
+    z-index: 10;
+    display: inline;
+    position: relative;
+    right: 0;
+    top: 0;
+
+    
+}
+
+.firstcontainer{
+     
+    max-width:1400px;
+    border-width: thick;
+    display: none;
+    border-style: solid;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    border-color: white;
+    
+}
+.FifthFadeinContainer{
+    background-color: white;
+    max-width:1400px;
+    border-width: thick;
+    display: none;
+    border-style: solid;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#4885ed;
+    border-color:#4885ed;
+}
+.SixthFadeinContainer{
+    background-color: white;
+    max-width:1400px;
+    border-width: thick;
+    display: none;
+    border-style: solid;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#4885ed;
+    border-color:#4885ed;
+}
+
+.FirstFadeinContainer
+{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: none;
+    padding-top: 10%;
+}
+
+#intro1{
+    text-align: center;
+    z-index: 10;
+
+}
+
+#intro2{
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: 10;
+}
+
+.logo{
+    min-width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0,0, 0.6);
+}
+.hi{
+    font-size:6rem;
+}
+
+
+
+.second-title{
+    margin-right: 40px;
+    letter-spacing: 10px;
+    font-size: 6rem;
+}
+
+.likelion_logo{
+    
+    width:100px;
+    
+}
+
+.dsc_logo{
+    width:100px;
+    border-radius: 100%;
+}
+.SecondFadeinContainer{
+    display: none;
+    margin-top: 10%;
+}
+
+
+.ThirdFadeinContainer{
+    display: none;
+    
+    
+}
+.third-title{
+    font-size: 6rem;
+}
+
+.hackathon_link{
+    text-decoration: none;
+    color:white;
+}
+
+.baekjoon{
+    font-size: 6rem;
+}
+
+.ForthFadeinContainer{
+    
+    background-color: #dbedff;
+    color:#24292e;
+    display: none;
+}
+
+.skill-hr{
+
+    color: white;
+
+}
+
+
+
+#counter{
+display: inline;
+}
+
+#counter2{
+display: inline;
+}
+
+.will{
+    font-size: 6rem;
+}
+
+footer{
+    background-color: #24292e;
+}
+
+.icon-copyrighter{
+    color:white;
+    text-decoration: none;
+}
+
+.facebooklogo{
+    font-size: 50px;
+    color: #a0a0a0;
+    display: inline;
+}
+.github{
+    display: inline;
+    font-size: 50px;
+    color: #a0a0a0;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Do+Hyeon&display=swap" rel="stylesheet">
+
+    <script src="./countUp.js">
+    </script>
+    <script type="text/javascript">
+
+
+
+            var who = "Who Are You?";
+            var i = 0;
+    
+            var k = 0;
+            var intro = "Division of Computer & Mechatronics GwonTaekJoon";
+
+            
+            
+
+
+            function typing(){
+                if(i<who.length){
+                    document.getElementById('intro1').innerHTML += who[i];
+                    i++;
+                    setTimeout(typing,200);
+                }
+            }
+            function introduce(){
+                if(k<intro.length){
+                    document.getElementById('intro2').innerHTML += intro[k];
+                    k++;
+                    setTimeout(introduce,50);
+                }
+            }
+
+
+            function fadein_container(){
+                $('.firstcontainer').fadeIn('slow');
+                setTimeout(fadein_first,1000);
+                setTimeout(fadein_second,3000);
+                setTimeout(fadein_third,5000);
+                setTimeout(fadein_forth,7000);
+                setTimeout(fadein_fifth,9000);
+                setTimeout(fadein_sixth,11000);
+                
+            }
+
+            function fadein_first(){
+                $('.FirstFadeinContainer').fadeIn('slow');
+                document.getElementById("first").scrollIntoView();
+                
+            }
+            
+            function fadein_second(){
+                $('.SecondFadeinContainer').fadeIn('slow');
+                document.getElementById("second").scrollIntoView();
+                
+            }
+            function fadein_third(){
+                const hackathon = new CountUp("counter",0,3,0,3);
+                $('.ThirdFadeinContainer').fadeIn('slow');
+                document.getElementById("third").scrollIntoView();
+                hackathon.start(function(){
+                    setTimeout(setTimeout(hackathon.start,1000));
+                });
+                
+            }
+            function fadein_forth(){
+                $('.ForthFadeinContainer').fadeIn('slow');
+                $('.section').css('background-color','#dbedff','padding-bottom','40px')
+                document.getElementById("forth").scrollIntoView();
+            }
+            function fadein_fifth(){
+                $('.FifthFadeinContainer').fadeIn('slow');
+                document.getElementById("fifth").scrollIntoView();
+                const baekjoon = new CountUp("counter2",0,52,0,3);
+                baekjoon.start(function(){
+                    setTimeout(baekjoon.start,1000);
+                });
+            }
+
+            function fadein_sixth(){
+                $('.SixthFadeinContainer').fadeIn('slow');
+                document.getElementById("sixth").scrollIntoView();
+            }
+
+
+
+        $( document ).ready(function(){
+                typing();
+                setTimeout(introduce,3000);
+                setTimeout(fadein_container,3000+50*50);
+                });
+    
+            
+            
+            
+
+    </script>
+
+    
+</head>
+<div class="logo">
+
+
+<header>
+    
+    <h1 id ="intro1"></h1>
+    <h2 id="intro2"></h2>
+    
+</header>
+</div>
+<body>
+    
+<div class="first-sector">
+    <div class="container firstcontainer">
+        <div id="first" class="row FirstFadeinContainer text-right">
+        <h1 class="hi">Hi</h1>
+        <h2>I'm University Student</h2>
+        <h3>강원도 철원에서 태어난 촌놈, 컴퓨터 좋아하는 삼육대학교 19학번 컴퓨터 공학과 학생입니다.<br>
+            현재 진로 탐색중이며 c/c++개발에 관심 많습니다.<br>
+            계속 끊임없이 열정적으로 공부중이고 훗날 훌륭하고 오래 살아남는 시니어 개발자가 될 것입니다. 
+            
+        </h3>
+        </div>
+        
+
+        <div id="second" class="row SecondFadeinContainer">
+        
+            <h2 class="second-title">I'm in </h2>
+            <img class="likelion_logo" src="./likelion_syu_log_2019.png" alt="liklion_logo">
+            <img class="dsc_logo" src="./dsc_syu_simple.png" alt="dsc_logo">
+            <h3>1학년 때부터 삼육대학교 멋쟁이사자처럼, Google DSC에 가입하여<br>
+                알아가야 할 것이 많은 1학년이 훌륭한 선배들을 만나 많은 도움과 배움을 받고 있습니다.
+            </h3>
+    
+        </div>
+
+        <div id="third" class="row ThirdFadeinContainer text-right">
+            <h2 class="third-title">I took part in <div id="counter">0</div> Hackathons</h2>
+            <h3>부족한 실력이지만 대외활동으로 접할 수 있는 기회로 해커톤을 참여하고 있습니다.</h3>
+            <h3>Click ↓</h3>
+            <a class="hackathon_link" href="https://github.com/GwonTaekJoon/hackathon-likelion-"><h3>First Hackathon</h3></a>
+            <a class="hackathon_link" href="https://github.com/GwonTaekJoon/hackathon_likelion"><h3>Second Hackathon</h3></a>
+            <a class="hackathon_link" href="https://github.com/YooInKeun/8Ton-Hackathon-Team12"><h3 style="margin: 0px;">Third Hackathon</h3></a>
+
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+<div class="section">
+<div id="forth" class="container ForthFadeinContainer text-center">
+    <div class="row">
+
+            <h2 class="skill">Using Skills</h2>
+            <h2>이것들 좀 다룰줄 알고 자세히 공부하고잇습니다.</h2>
+            <hr color="#24292e" class="skill-hr">
+    </div>
+    <div class="row">
+        <img width="100px" src="./linguagem-c-300x300.png" alt="c_logo">
+        <img width="78px" src="./c++.png" alt="c++_logo"></div>
+    <div class="row">
+        <img width="100px" src="./django-icon-0.jpg" alt="django_logo">
+        <img width="100px" src="./html-5.png" alt="html_logo">
+        <img width="100px" src="./css.png" alt="css_logo">
+    </div>
+    </div>
+
+</div>
+
+
+
+
+    <div id="fifth" class="container FifthFadeinContainer">
+        <div class="row">
+            <h2 class="baekjoon">I'm Solving Baekjoon <div id="counter2">0</div></h2>
+            <h3>제가 메인 언어로 삼은 c/c++을 통하여 백준 알고리즘을 풀고 있습니다.</h3>
+            <a href="https://www.acmicpc.net/user/kyuzu123123"><h3 style="margin-bottom: 0px;">click!</h3></a>
+            
+        </div>
+    </div>
+
+    <div id="sixth" class="container SixthFadeinContainer text-right">
+        <div class="row">
+            <h2 class="will">I will add contents</h2>
+            <h3>아직 완전히 만들어진 블로그가 아니에요 좀 더 추가할게요!</h3>
+        </div>
+    </div>
+
+
+   
+</body>
+
+<footer>
+        
+        <a href="https://www.facebook.com/profile.php?id=100028260127535"><i class="fab fa-facebook-square facebooklogo"></i></a>
+        <a href="https://github.com/GwonTaekJoon"><i class="fab fa-github github"></i></a>
+
+
+</footer>
+
+
+</html>
